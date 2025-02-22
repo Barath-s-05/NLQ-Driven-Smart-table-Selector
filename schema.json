@@ -1,0 +1,42 @@
+{
+    "customers": {
+        "columns": ["id", "name", "email", "created_at", "total_spent"],
+        "data": [
+            {"id": 1, "name": "Alice Johnson", "email": "alice@example.com", "created_at": "2024-01-10", "total_spent": 1200},
+            {"id": 2, "name": "Bob Smith", "email": "bob@example.com", "created_at": "2024-02-05", "total_spent": 900},
+            {"id": 3, "name": "Charlie Brown", "email": "charlie@example.com", "created_at": "2023-12-20", "total_spent": 1500}
+        ]
+    },
+    "orders": {
+        "columns": ["id", "customer_id", "order_date", "total_amount"],
+        "data": [
+            {"id": 101, "customer_id": 1, "order_date": "2024-01-15", "total_amount": 600},
+            {"id": 102, "customer_id": 2, "order_date": "2024-02-10", "total_amount": 400},
+            {"id": 103, "customer_id": 3, "order_date": "2024-01-20", "total_amount": 900}
+        ]
+    },
+    "products": {
+        "columns": ["id", "name", "category", "price", "stock"],
+        "data": [
+            {"id": 201, "name": "MacBook Pro", "category": "laptop", "price": 2000, "stock": 5},
+            {"id": 202, "name": "Dell XPS 13", "category": "laptop", "price": 1500, "stock": 10},
+            {"id": 203, "name": "iPhone 15", "category": "mobile", "price": 1200, "stock": 15}
+        ]
+    },
+    "payments": {
+        "columns": ["id", "customer_id", "order_id", "payment_date", "amount", "payment_status"],
+        "data": [
+            {"id": 301, "customer_id": 1, "order_id": 101, "payment_date": "2024-01-16", "amount": 600, "payment_status": "Completed"},
+            {"id": 302, "customer_id": 2, "order_id": 102, "payment_date": "2024-02-11", "amount": 400, "payment_status": "Pending"},
+            {"id": 303, "customer_id": 3, "order_id": 103, "payment_date": "2024-01-21", "amount": 900, "payment_status": "Completed"}
+        ]
+    },
+    "employees": {
+        "columns": ["id", "name", "email", "position", "salary", "hired_date"],
+        "data": [
+            {"id": 401, "name": "David Miller", "email": "david@example.com", "position": "Manager", "salary": 7000, "hired_date": "2022-05-10"},
+            {"id": 402, "name": "Emma Watson", "email": "emma@example.com", "position": "Engineer", "salary": 4800, "hired_date": "2023-06-15"},
+            {"id": 403, "name": "John Doe", "email": "john@example.com", "position": "Senior Engineer", "salary": 5500, "hired_date": "2021-11-20"}
+        ]
+    }
+}
